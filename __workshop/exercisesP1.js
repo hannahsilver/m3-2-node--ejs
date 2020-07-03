@@ -26,15 +26,15 @@ const q3 = (req, res) => {
   // pass this information to ejs file and render it in the answer box.
   const homer = {
     imageUrl:
-      "https://vignette.wikia.nocookie.net/simpsons/images/0/02/Homer_Simpson_2006.png",
-    name: "Homer Jay Simpson",
-    dob: "May 12, 1956",
-    profession: "Low-level Safety Inspector",
-    favoriteFood: "Donuts",
-    favoriteBeverage: "Duff Beer",
+      "<img src=https://vignette.wikia.nocookie.net/simpsons/images/0/02/Homer_Simpson_2006.png>",
+    name: "<p>Homer Jay Simpson</p>",
+    dob: "<p>May 12, 1956<p>",
+    profession: "<p>Low-level Safety Inspector</p>",
+    favoriteFood: "<p>Donuts</p>",
+    favoriteBeverage: "<p>Duff Beer</p>",
   };
 
-  res.render("pages/question3");
+  res.render("pages/question3", { homer });
 };
 
 // -----------------------------------------------
